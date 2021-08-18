@@ -1,0 +1,5 @@
+{
+    "autoimport.filesToScan": "**/*.{js,jsx,ts,tsx}",
+    "autoimport.showNotifications": true,
+    "autoimport.doubleQuotes": true
+}
