@@ -6,7 +6,6 @@ const PostForm = ({create}) => {
 
   const [post, setPost] = useState({title: '', body: ''});
 
-
   const createNewPost = (e) => {
     e.preventDefault();
     const newPost = {
@@ -16,11 +15,14 @@ const PostForm = ({create}) => {
     create(newPost);
     setPost({title: '', body: ''})
   };
+
     return (
         <form>
         <MyInput
           value={post.title}
-          onChange={e => {setPost({...post, title: e.target.value})}}
+          onChange={e => {
+            setPost({...post, title: e.target.value})
+          }}
           type="text"
           placeholder="post title"
         />
